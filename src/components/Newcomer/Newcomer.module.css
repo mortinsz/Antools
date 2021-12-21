@@ -1,0 +1,34 @@
+.newcomer{
+    background-color: hsl(206, 15%, 18%);
+    color: #fff;
+}
+.newcomer__wrapper{
+    max-width: 1224px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.Newcomer__text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title{
+    font-size: 48px;
+    font-weight: 500;  
+}
+.subtitle{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.tools{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
