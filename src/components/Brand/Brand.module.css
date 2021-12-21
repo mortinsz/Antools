@@ -1,0 +1,52 @@
+.brand{
+    background-color: hsl(206, 15%, 18%);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.brand__wrapper{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    border: 2px solid #cacaca0c;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+
+    background: radial-gradient(24.74% 28.98% at -8.29% 16.67%, rgba(255, 47, 47, 0.088) 0%, rgba(255, 110, 48, 0) 100%),
+linear-gradient(0deg, rgba(48, 56, 63, 0.6), rgba(40, 48, 54, 0.6));
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.brandCard{
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 10px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 55px;
+}
+.items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.item:hover{
+    opacity: 0.7;
+}

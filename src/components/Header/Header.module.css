@@ -1,0 +1,87 @@
+.header{
+    background-color: hsl(206, 15%, 18%);
+    width: 100%;
+    /* overflow: hidden; */
+
+}
+.header__wrapper{
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 26px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* logo */
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.logoText{
+    font-size: 22px;
+    font-weight: 600;
+}
+.imglogo{
+    margin-right: 12px;
+}
+
+
+/* menu */
+ul{
+    padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+}
+ul li{
+    margin: 0px 25px 0 0;
+	display:inline-block;
+}
+ul li a{
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+ul li a:hover{
+    color: #ff6e30;
+    font-weight: 500;
+}
+ul ul{
+    display: none;
+	position: absolute;
+	top: 100%;
+}
+ul li:hover > ul {
+    display:inherit;
+    z-index: 50;
+}
+ul ul li {
+    min-width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+    margin-top: 10px;
+}
+
+.downMenu::after{
+    content: ">";
+    display:inline-block;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* login a */
+.login{
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 40px;
+    transition: all 0.2s;
+}
+.login:hover{
+    color: #ff6e30;
+}
