@@ -71,6 +71,13 @@ linear-gradient(0deg, rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6));
 }
 .like{
     margin-right: 20px;
+    fill: #fff;
+    fill-opacity: 0.38;
+    cursor: pointer;
+}
+.like svg:hover, .like svg.active{
+    fill: rgb(199, 0, 0);
+    fill-opacity: 1;
 }
 .visitbtn{
     display: inline-block;
@@ -86,4 +93,13 @@ linear-gradient(0deg, rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6));
 .visitbtn:hover{
     color: #fff;
     background-color: #FF6E30 ;
+}
+@media (max-width: 768px) {
+    .nameOf{
+        font-size: 19px;
+    }
+    .price{
+        font-size: 15px;
+    }
+    
 }

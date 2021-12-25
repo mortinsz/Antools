@@ -1,14 +1,13 @@
 import React from 'react'
-import styles from './Header.module.css'
-import ButtonFill from '../../components/Button/Button';
+import styles from './BurgerHidden.module.css'
 import { NavLink } from 'react-router-dom';
+import ButtonFill from '../Button/Button';
 
-
-function Header() {
+function BurgerHidden() {
     return (
-        <div className={styles.header}>
-            <div className={styles.header__wrapper}>
-                <a href="#"className={styles.header__logo}>
+        <div className={styles.BurgerHidden}>
+            <div className={styles.BurgerHidden__wrapper}>
+            <a href="#"className={styles.header__logo}>
                     <div className={styles.imglogo}>
                         <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="38" height="38" rx="8" fill="#FF6E30"/>
@@ -36,7 +35,7 @@ function Header() {
                     <NavLink to='/Login' className={styles.login}>Login</NavLink>
                     <NavLink to='/SignUp'><ButtonFill text="Sign Up" /></NavLink>
                 </div>
-                <NavLink to='/BurgerHidden'className={styles.burger }>
+                <NavLink to='/'className={styles.burger }>
                     <span></span>
                 </NavLink>
             </div>
@@ -44,4 +43,4 @@ function Header() {
     )
 }
 
-export default Header
+export default BurgerHidden

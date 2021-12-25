@@ -11,6 +11,7 @@
     margin: 0 auto;
     height: 100%;
     display: flex;
+    padding: 0 10px;
 }
 .Mainscreen__img{
     position: relative;
@@ -78,6 +79,26 @@
 .socials div:hover{
     opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 30px;
+    }
+    .Mainscreen__img{
+        width: 20%;
+    }
+    .Mainscreen__text{
+        width: 80%;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
 
 /* vectors */
 .svg_1{

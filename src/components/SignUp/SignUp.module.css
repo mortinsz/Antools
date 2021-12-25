@@ -1,0 +1,75 @@
+.SignUp{
+    background-color: hsl(206, 15%, 18%);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+    animation-name: startPage;
+    animation-duration: 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.SignUp__wrapper{
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #cacaca0c;
+    border-radius: 15px;
+    backdrop-filter: blur(50px);
+    background: radial-gradient(21.3% 24.95% at 92.86% 6.8%, rgba(255, 109, 47, 0.088) 0%, rgba(255, 110, 48, 0) 100%),
+    linear-gradient(0deg, rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SignUp__title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.SignUp__input{
+    width: 100%;
+    background: rgba(196, 196, 196, 0.24);
+    border-radius: 15px;
+    color:#C4C4C4;
+    padding: 10px 0px 10px 27px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    margin-bottom: 30px;
+}
+.discription{
+    max-width: 290px;
+    font-size: 8px;
+    color: #737373;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+@keyframes startPage {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

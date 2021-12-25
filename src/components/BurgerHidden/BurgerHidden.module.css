@@ -1,3 +1,27 @@
+.BurgerHidden{
+    background-color: hsl(206, 15%, 18%);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+@keyframes burgStart {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+    }
+}
+.BurgerHidden__wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: 25px 10px;
+    transition: all 0.2s ease-in-out;
+    animation-name: burgStart;
+    animation-duration: 0.4s;
+}
 .header{
     background-color: hsl(206, 15%, 18%);
     width: 100%;
@@ -27,8 +51,10 @@
     margin-right: 12px;
 }
 .header__sign{
+    margin-top: 30px;
     width: 20%;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
 }
@@ -39,21 +65,24 @@
 	margin:0;
 	list-style: none;
 	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-ul li{
-    margin: 0px 25px 0 0;
+.header__menu ul li{
+    margin: 25px 0px 0 0;
 	display:inline-block;
 }
-ul li a{
+.header__menu ul li a{
     color: rgba(255, 255, 255, 0.55);
     font-weight: 500;
     transition: all 0.2s;
 }
-ul li a:hover{
+.header__menu ul li a:hover{
     color: #ff6e30;
     font-weight: 500;
 }
-ul ul{
+.header__menu ul ul{
     display: none;
 	position: absolute;
 	top: 100%;
@@ -92,10 +121,11 @@ ul ul li {
 }
 
 .burger{
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 25px;
     width: 30px;
     height: 20px;
-    display: none;
     margin-right: 20px;
 }
 .burger::after, .burger::before, span{
@@ -118,20 +148,3 @@ span{
     left: 0;
 }
 
-@media (max-width: 991px) {
-    .burger{
-        display: block;
-    }
-    .burger.active{
-        position: absolute;
-        width: 50%;
-        height: 100%;
-        background-color: hsl(206, 15%, 18%);
-        top: 0;
-        left: 0;
-    }
-    .header__menu, .header__sign{
-        position: absolute;
-        left: -100%;
-    }
-}
