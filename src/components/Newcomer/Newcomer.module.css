@@ -8,6 +8,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 0 10px;
 }
 .Newcomer__text{
     width: 40%;
@@ -26,9 +27,27 @@
     text-align: left;
     margin-top: 30px;
     margin-bottom: 60px;
+    line-height: 16px
 }
 .tools{
     width: 60%;
     display: grid;
     grid-template-columns: 50% 50%;
+}
+@media (max-width:768px) {
+    .newcomer__wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    .tools{
+        grid-template-columns: 100%;
+        margin-top: 60px;
+    }
 }

@@ -5,10 +5,15 @@ import styles from './Newcomer.module.css'
 
 function Newcomer() {
 
-    const zeplinSrc = './img/cart/zeplin.svg';
-    const phpstormSrc = './img/cart/phpstorm.svg';
-    const toolboxSrc = './img/cart/toolbox.svg';
-    const ProcreateSrc = './img/cart/procreate.svg';
+    let cardNewcomer = [
+
+        {id: 1, CartImg:'./img/cart/zeplin.svg', color:'white', fontSize:'16px', name:'Zeplin', price:'Free', aboutText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+        {id: 2, CartImg:'./img/cart/phpstorm.svg', color:'white' , fontSize:'16px', name:'PHPstorm', price:'Free', aboutText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+        {id: 3, CartImg:'./img/cart/toolbox.svg', color:'white', fontSize:'16px', name:'Toolbox', price:'Free', aboutText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+        {id: 4, CartImg:'./img/cart/procreate.svg', color:'white', fontSize:'16px', name:'Procreate', price:'Free', aboutText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},     
+    ]
+
+    let newcomerInside = cardNewcomer.map( nc => <Cart CartImg={nc.CartImg} color={nc.сolor} fontSize={nc.fontSize} name={nc.name} price={nc.price} aboutText={nc.aboutText} />)
 
     return (
         <div className={styles.newcomer}>
@@ -20,10 +25,7 @@ function Newcomer() {
 
                 </div>
                 <div className={styles.tools}>
-                    <Cart CartImg={zeplinSrc} fontSize='14px' name='Zeplin' price='Free' aboutText='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>
-                    <Cart CartImg={phpstormSrc} fontSize='14px' name='PHPstorm' price='Free' aboutText='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>
-                    <Cart CartImg={toolboxSrc} fontSize='14px' name='Toolbox' price='Free' aboutText='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>
-                    <Cart CartImg={ProcreateSrc} fontSize='14px' name='Procreate' price='Free' aboutText='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>
+                    {newcomerInside}
                 </div>
                 
             </div>

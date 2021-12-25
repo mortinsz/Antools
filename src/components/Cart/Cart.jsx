@@ -2,6 +2,9 @@ import React from 'react'
 import styles from './Cart.module.css'
 
 function Cart(props) {
+    
+        
+    
 
     return (
         <div className={styles.Cart}>
@@ -18,9 +21,9 @@ function Cart(props) {
                 <div className={styles.about} style={{ fontSize: props.fontSize, maxWidth: props.width}}>{props.aboutText}</div>
                 <div className={styles.actions}>
                     <div className={styles.btns}>
-                        <div className={styles.like}>
-                            <svg width="28" height="28" viewBox="0 0 28 28"  xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" fill-opacity="0.38"/>
+                        <div className={styles.like} >
+                            <svg   onClick={() => this.setState({fill: 'rgb(199, 0, 0)'})} width="28" height="28" viewBox="0 0 28 28"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z"  />
                             </svg>
                         </div>
                         <div className={styles.addCollection}>   

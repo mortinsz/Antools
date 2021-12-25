@@ -23,7 +23,7 @@
 .footer__wrapper{
     max-width: 1224px;
     margin: 0 auto;
-    padding: 70px 0px ;
+    padding: 70px 10px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
