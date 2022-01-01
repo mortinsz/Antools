@@ -58,6 +58,10 @@
 a{
     margin-bottom: 30px;
 }
+.SignUp label{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
 .discription{
     max-width: 290px;
     font-size: 8px;
@@ -72,4 +76,13 @@ a{
     100%{
         opacity: 1;
     }
+}
+.SignUp button{
+    margin: 20px 0px;
+}
+
+.SignUp button:disabled{
+    background-color: #bd4f2091;
+    color: rgba(255, 255, 255, 0.678);
+    cursor: default;
 }

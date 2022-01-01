@@ -3,9 +3,9 @@ import styles from './Button.module.css'
 
 function ButtonFill(props) {
     return (
-        <div className={styles.button} padding={props.padding}>
+        <button type={props.type} disabled={props.disabled} className={styles.button} padding={props.padding}>
             {props.text}
-        </div>
+        </button>
     )
 }
 

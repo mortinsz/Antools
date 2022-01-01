@@ -4,7 +4,7 @@ import Cart from '../Cart/Cart'
 import styles from './Newcomer.module.css'
 
 function Newcomer() {
-
+ 
     let cardNewcomer = [
 
         {id: 1, CartImg:'./img/cart/zeplin.svg', color:'white', fontSize:'16px', name:'Zeplin', price:'Free', aboutText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
