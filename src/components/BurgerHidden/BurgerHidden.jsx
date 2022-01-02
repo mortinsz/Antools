@@ -17,7 +17,7 @@ function BurgerHidden() {
                     </div>
                     <div className={styles.logoText}>antools.</div>
                 </a>
-                <div className={styles.header__menu}>
+                <div className={styles.BurgerHidden__menu}>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li className={styles.downMenu}><a href="#">Categories</a>

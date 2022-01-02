@@ -58,6 +58,14 @@
 a{
     margin-bottom: 30px;
 }
+.Login label{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.SignUp button{
+    margin: 20px 0px;
+}
+
 @keyframes startPage {
     0%{
         opacity: 0;
